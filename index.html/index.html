@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <title>Shopeze</title>
+</head>
+<body>
+
+
+     <section class="search-ctr">
+      <div class="search-container">
+        <form>
+          <i class="ri-search-line search-icon search"></i>
+          <input type="text" name="" id="search-item" placeholder="Search for Products">
+        </form>
+        <div class="product-list">
+             
+        </div>
+       </section>
+  
+  <header>
+       <a href="#" class="logo">Shopeze</a>
+
+       <div class="nav-links">
+        <ul class="links">
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <a href="#shop-products">
+            <li>Shop</li>
+          </a>
+          <a href="#footer">
+            <li>About us</li>
+          </a>
+          <a href="#footer">
+            <li>Contact us</li>
+          </a>
+          <div class="info-icons">
+                <i class="ri-user-line"  id="login-icon"></i>
+               <i class="ri-shopping-bag-line"  id="cart-icon"></i>
+               <span class="cart-item-count"></span>
+       </div>
+        </ul>
+        
+       </div>
+         
+      
+
+       <div class="menu"><i class="ri-menu-line color-g"></i></div>
+             
+  </header>
+
+
+
+  
+<!-- Login Popup -->
+<div class="login-popup" id="login-popup">
+
+    <div class="login-box">
+
+        <!-- Close Button -->
+        <i class="ri-close-line login-close" id="login-close"></i>
+
+        <!-- Login Heading -->
+        <div class="login-heading">
+            <i class="ri-user-3-line"></i>
+            <h2>Welcome Back!</h2>
+            <p>Login to continue shopping with us.</p>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login-form">
+
+            <div class="login-input">
+                <label>Email Address</label>
+                <div class="input-field">
+                    <i class="ri-mail-line"></i>
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+            </div>
+
+            <div class="login-input">
+                <label>Password</label>
+                <div class="input-field">
+                    <i class="ri-lock-line"></i>
+                    <input
+                        type="password"
+                        id="login-password"
+                        placeholder="Enter your password"
+                        required
+                    >
+                    <i class="ri-eye-line" id="show-password"></i>
+                </div>
+            </div>
+
+            <div class="login-options">
+                <label>
+                    <input type="checkbox">
+                    Remember me
+                </label>
+
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login-submit">
+                Login <i class="ri-arrow-right-line"></i>
+            </button>
+
+            <p class="signup-text">
+                Don't have an account?
+                <a href="#">Sign Up</a>
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+   
+<div class="cart">
+  <h2 class="cart-title">Your Cart</h2>
+
+  <div class="cart-content">
+    <!-- <div class="cart-box">
+      <img src="assets/product1.jpg" class="cart-img" alt="Casual Black Polo">
+
+      <div class="cart-detail">
+        <h2 class="cart-product-title">Casual Black Polo</h2>
+        <span class="cart-price">$100</span>
+
+        <div class="cart-quantity">
+          <button id="decrement" type="button">-</button>
+          <span class="number">1</span>
+          <button id="increment" type="button">+</button>
+        </div>
+      </div>
+
+      <i class="ri-delete-bin-line cart-remove"></i>
+    </div> -->
+  </div>
+
+  <div class="total">
+    <div class="total-title">Total</div>
+    <div class="total-price">$0</div>
+  </div>
+
+  <button class="btn-buy" type="button">Buy Now</button>
+  <i class="ri-close-line" id="cart-close"></i>
+</div>
+
+
+
+<!-- Hero Section -->
+ <div class="hero-ctr">
+<section class="hero" id="home">
+
+
+    <div class="hero-content">
+        <span class="hero-tag">
+            <i class="fa-solid fa-star"></i>
+            New Collection 2026
+        </span>
+
+        <h1>
+            Discover Your
+            <span>Perfect Style</span>
+        </h1>
+
+        <p>
+            Upgrade your everyday look with our latest collection.
+            Explore premium products, timeless designs, and styles
+            made just for you.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#shop-products" class="hero-btn primary-btn">
+                Shop Now
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#shop-products" class="hero-btn secondary-btn">
+                Explore Collection
+            </a>
+        </div>
+
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <h3>10k+</h3>
+                <p>Happy Customers</p>
+            </div>
+
+            <div class="hero-divider"></div>
+
+            <div class="hero-stat">
+                <h3>500+</h3>
+                <p>Products</p>
+            </div>
+
+            <div class="hero-divider"></div>
+
+            <div class="hero-stat">
+                <h3>4.9/5</h3>
+                <p>Customer Rating</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <div class="hero-image-bg"></div>
+
+        <img
+            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=85"
+            alt="Stylish clothing collection in a modern fashion store"
+        >
+
+        <div class="hero-floating-card">
+            <div class="hero-card-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+            </div>
+
+            <div>
+                <h4>Free Shipping</h4>
+                <p>On orders over ₹999</p>
+            </div>
+        </div>
+
+        <div class="hero-circle-text">
+            <span>STYLE</span>
+            <i class="fa-solid fa-heart"></i>
+            <span>QUALITY</span>
+        </div>
+    </div>
+</section>
+</div>
+
+  <section class="shop" id="shop-products">
+
+    <h1 class="section-title">Shop Products</h1>
+    <div class="product-content">
+      <!-- <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product1.jpg">
+        </div>
+        <h2 class="product-title">
+         Classic Cotton T-Shirt
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$100</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product2.jpg">
+        </div>
+        <h2 class="product-title">
+         Casual Hooded Jacket
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$150</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product3.jpg">
+        </div>
+        <h2 class="product-title">
+          Urban Style T-Shirt
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$100</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product4.jpg">
+        </div>
+        <h2 class="product-title">
+          Lightweight Utility Jacket
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$150</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product5.jpg">
+        </div>
+        <h2 class="product-title">
+        Winter Quilted Jacket
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$100</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product6.jpg">
+        </div>
+        <h2 class="product-title">
+          Casual Fleece Jacket
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$100</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product7.jpg">
+        </div>
+        <h2 class="product-title">
+          Classic Biker Jacket
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$200</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product8.jpg">
+        </div>
+        <h2 class="product-title">
+         a yellow T-shirt
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$150</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div> -->
+    </div>
+
+  </section>
+
+  
+
+<!-- New Collection Banner -->
+ <div class="bg">
+<section class="collection-banner">
+    <div class="banner-content">
+        <span class="banner-tag">
+            <i class="fa-solid fa-sparkles"></i>
+            JUST DROPPED · 2026
+        </span>
+
+        <h1>
+            <span>New Collection</span>
+        </h1>
+
+        <p>
+            Fresh styles Timeless looks Made for you
+        </p>       
+    </div>
+
+    
+</section>
+</div>
+
+<section class="shop" id="shop">
+    <h2 class="section-title">New Arrivals</h2>
+    <div class="product-content">
+      <!-- <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product1.jpg">
+        </div>
+        <h2 class="product-title">
+         Classic Cotton T-Shirt
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$100</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product2.jpg">
+        </div>
+        <h2 class="product-title">
+         Casual Hooded Jacket
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$150</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product3.jpg">
+        </div>
+        <h2 class="product-title">
+          Urban Style T-Shirt
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$100</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product4.jpg">
+        </div>
+        <h2 class="product-title">
+          Lightweight Utility Jacket
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$150</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product5.jpg">
+        </div>
+        <h2 class="product-title">
+        Winter Quilted Jacket
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$100</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product6.jpg">
+        </div>
+        <h2 class="product-title">
+          Casual Fleece Jacket
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$100</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product7.jpg">
+        </div>
+        <h2 class="product-title">
+          Classic Biker Jacket
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$200</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="img-box">
+          <img src="assets/product8.jpg">
+        </div>
+        <h2 class="product-title">
+         a yellow T-shirt
+        </h2>
+        <div class="price-and-cart">
+          <span class="price">$150</span>
+          <i class="ri-shopping-bag-line add-cart"></i>
+        </div>
+      </div>  -->
+    </div>
+</section>
+
+
+<!-- FOOTER SECTION -->
+<footer class="footer" id="footer">
+    <div class="footer-content">
+
+        <div class="footer-box footer-about">
+            <a href="#" class="footer-logo">Shopeze<span>.</span></a>
+            <p>
+                Discover your style with our latest collections.
+                Quality products, timeless designs, and fashion
+                made for every day.
+            </p>
+
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+                <a href="#" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#shop-products">Shop</a></li>
+                <li><a href="#new-arrivals">New Arrivals</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Shipping Information</a></li>
+                <li><a href="#">Returns & Exchanges</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box footer-contact">
+            <h3>Get In Touch</h3>
+            <p><i class="ri-map-pin-line"></i> Your City, Your Country</p>
+            <p><i class="ri-mail-line"></i> support@example.com</p>
+            <p><i class="ri-phone-line"></i> +91 00000 00000</p>
+
+            <h4>We Accept</h4>
+            <div class="payment-icons">
+                <i class="ri-visa-line"></i>
+                <i class="ri-mastercard-line"></i>
+                <i class="ri-bank-card-line"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Ecommerce. All rights reserved.</p>
+        <p>Made with <i class="ri-heart-fill"></i> for your style.</p>
+    </div>
+</footer>
+
+
+
+  <script src="main.js"></script>
+</body>
+</html>
