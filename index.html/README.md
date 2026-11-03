@@ -17,5 +17,5 @@ A responsive e-commerce website built using HTML, CSS and JavaScript.
 - Fetch API
 
 ## Live Demo
-Coming soon.
+https://adx1156.github.io/Shopeze/
 
